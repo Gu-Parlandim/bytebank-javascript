@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="utf-8">
@@ -14,8 +14,8 @@
 <body class="container">
   <aside class="sidebar">
     <img src="./imagens/logo.png" alt="Logo do bytebank" />
-    <img src="./imagens/avatar.png" alt="Avatar do usuário" class="sidebar__avatar" />
-    <h2>Moni Hillman</h2>
+    <img src="https://avatars.githubusercontent.com/u/56051040?v=4" alt="Avatar do usuário" class="sidebar__avatar" />
+    <h2>Parlan</h2>
     <hr class="sidebar__linha" />
     <nav class="sidebar__links">
       <a href="#"><span class="links__icone dashboard"></span>Dashboard</a>
@@ -27,7 +27,7 @@
 
   <main class="dados">
     <header class="cabecalho">
-      <h2>Olá, Moni! Estes são os detalhes da sua cotação:</h2>
+      <h2>Olá, Parlan! Estes são os detalhes da sua cotação:</h2>
     </header>
 
     <article class="dadosDolar">
@@ -36,6 +36,8 @@
           <span class="grafico__ilustracao-dolar"></span>
           <h2>Variação da moeda desde o login</h2>
         </div>
+
+        <canvas id="graficoDolar"></canvas>
 
       </div>
 
@@ -50,6 +52,9 @@
       <p>Dashboard - Desenvolvido por Alura</p>
     </footer>
   </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="scripts/main.js" type="module"></script>
 </body>
 
 </html>
